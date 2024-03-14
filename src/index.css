@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(/src/Assets/Images/default-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+@font-face {
+    font-family: "header-font";
+    src: url(Assets/Fonts/Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: "main-font";
+    src: url(Assets/Fonts/Kanit-BoldItalic.ttf);
+}
+
+.App>header {
+    font-size: xx-large;
+    color: white;
+    font-family: "header-font";
+    grid-row: 1;
+}
+
+.App>main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 2;
+}
+
+.MovieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.MovieList .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.MovieItem {
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.MovieItem:hover {
+    transform: translateY(-5px);
+}
+
+.MovieItem>button>img {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    border-radius: 10px;
+}
+
+.MovieItem>button {
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+}
+
+.MovieDetails h2,
+.MovieDetails p {
+    margin: 0;
+}
+
+.MovieDetails>img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.MovieDetails>button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes starIconAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Like {
+    animation: starIconAnimation 0.5s ease;
+}
