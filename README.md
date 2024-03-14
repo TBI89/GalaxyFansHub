@@ -55,14 +55,14 @@ Please notice the the SWAPI API might take some time to respond
 ## Tasks
 
 1. **Debugging:** 
-    - Start the application and identify the 2 errors introduced✅
-    - Dive into the codebase and pinpoint the source of each error✅
-    - Rectify each error ensuring the application displays and functions correctly✅
-    - Offer a concise explanation of the root causes and detail your solutions✅
+    - Start the application and identify the 2 errors introduced
+    - Dive into the codebase and pinpoint the source of each error
+    - Rectify each error ensuring the application displays and functions correctly
+    - Offer a concise explanation of the root causes and detail your solutions
 
 2. **Styling:** 
-    - Refactor the application's styling to match the provided [mockup](page_mockup.png)✅
-    - Ensure the design is responsive and maintains consistency across various screen sizes and browsers✅
+    - Refactor the application's styling to match the provided [mockup](page_mockup.png)
+    - Ensure the design is responsive and maintains consistency across various screen sizes and browsers
 
 3. **Improvements:** (Optional)
     - After implementation of the basic design, you can go ahead and implement any other enhancements or features you feel would optimize the application.
